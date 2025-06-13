@@ -9,7 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body class="font-project">
+<body class="font-project min-h-screen">
+   
+    <!-- aqui fica o botão com barra de progresso -->
+
+    <div class="fixed right-[50px] bottom-[50px] w-[92px] h-[92px]">
+        <svg>
+            <circle r="40" cx="40" cy="40" class="fill-none stroke-[10px] stroke-gray-500 transform-[translate(6px,_6px)]"></circle>
+            <circle id="c2" r="40" cx="40" cy="40" class="fill-none stroke-[10px] stroke-[#00ff00] transform-[translate(6px,_6px)]"></circle>
+        </svg>
+
+        <div class="w-full h-full flex items-center justify-center text-[40px] absolute top-0 left-0">
+            <div id="bottop" class="bg-black text-white rounded-[100%] w-[70px] h-[70px] flex justify-center items-center cursor-pointer"><i class="fa-solid fa-arrow-up"></i></div>
+        </div>
+    </div>
+
+    <!-- barra de pesquisa -->
+
     <section class="bg-blue-500 min-h-screen w-screen flex justify-center items-center">
         
         <div class="capitalize w-[450px] flex flex-col gap-[20px_0px]">
@@ -81,7 +97,7 @@
                         <p>depois de duas decadas de seca no deserto do saara o viajante misterioso tem que achar um jeito de sobreviver sozinho indo de deserto para deserto. tudo o que ele tem é seu impala 1967</p>
                     </div>
                 </li>
-                <div id="res" class="text-center text-[1.8rem] capitalize">
+                <div id="res" class="text-center text-[1.8rem] capitalize hidden">
                     nenhum item foi encontrado
                 </div>
             </ul>
@@ -89,6 +105,11 @@
         </div>
     </section>
 
+    <section>
+
+    </section>
+
     <script src="javascript/pesquisa.js"></script>
+    <script src="javascript/scroll.js"></script>
 </body>
 </html>
