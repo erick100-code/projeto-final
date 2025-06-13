@@ -15,7 +15,10 @@
     --color-emerald-300: oklch(84.5% 0.143 164.978);
     --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -257,11 +260,23 @@
   .h-\[350px\] {
     height: 350px;
   }
+  .h-\[15000px\] {
+    height: 15000px;
+  }
   .h-full {
     height: 100%;
   }
+  .h-screen {
+    height: 100vh;
+  }
+  .min-h-\[0px\] {
+    min-height: 0px;
+  }
   .min-h-\[150px\] {
     min-height: 150px;
+  }
+  .min-h-\[200px\] {
+    min-height: 200px;
   }
   .min-h-\[500px\] {
     min-height: 500px;
@@ -269,14 +284,23 @@
   .min-h-\[1000px\] {
     min-height: 1000px;
   }
+  .min-h-\[5000px\] {
+    min-height: 5000px;
+  }
   .min-h-\[10000px\] {
     min-height: 10000px;
+  }
+  .min-h-\[15000px\] {
+    min-height: 15000px;
   }
   .min-h-\[1000000px\] {
     min-height: 1000000px;
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-\[0px\] {
+    width: 0px;
   }
   .w-\[9\] {
     width: 9;
@@ -286,6 +310,9 @@
   }
   .w-\[10px\] {
     width: 10px;
+  }
+  .w-\[20px\] {
+    width: 20px;
   }
   .w-\[40px\] {
     width: 40px;
@@ -308,8 +335,23 @@
   .w-\[110px\] {
     width: 110px;
   }
+  .w-\[130px\] {
+    width: 130px;
+  }
+  .w-\[140px\] {
+    width: 140px;
+  }
   .w-\[150px\] {
     width: 150px;
+  }
+  .w-\[170px\] {
+    width: 170px;
+  }
+  .w-\[180px\] {
+    width: 180px;
+  }
+  .w-\[200px\] {
+    width: 200px;
   }
   .w-\[250px\] {
     width: 250px;
@@ -398,6 +440,9 @@
   .gap-\[0px_10px\] {
     gap: 0px 10px;
   }
+  .gap-\[5px_0px\] {
+    gap: 5px 0px;
+  }
   .gap-\[10px\] {
     gap: 10px;
   }
@@ -434,6 +479,9 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-\[\#131219\] {
+    background-color: #131219;
   }
   .bg-\[b\] {
     background-color: b;
@@ -526,6 +574,18 @@
   }
   .text-\[49ox\] {
     color: 49ox;
+  }
+  .text-gray-300 {
+    color: var(--color-gray-300);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
   }
   .text-white {
     color: var(--color-white);

@@ -14,9 +14,22 @@ c2.style.strokeDasharray = circunferencia
 c2.style.strokeDashoffset = circunferencia
 
 window.addEventListener('scroll', () => {
-    const atual = window.scrollY
+    const atual = window.scrollY 
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight
     const progresso = atual / maxScroll
     const offset = circunferencia * (1 - progresso)
-    c2.style.strokeDashoffset = offset
+    
+    
+    if (atual > maxScroll) {
+        c2.style.strokeDashoffset = offset + 6
+    } else {
+        c2.style.strokeDashoffset = offset
+    }
+ 
+    if (atual > maxScroll) {
+        c2.style.stroke = 'gold'
+        
+    } else {
+        c2.style.stroke = '#00ff00'
+    }
 })
