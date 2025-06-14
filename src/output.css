@@ -23,6 +23,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-semibold: 600;
+    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-project: "Poppins", sans-serif;
@@ -456,6 +458,9 @@
   .transform-\[translate\(40px_30px\)\] {
     transform: translate(40px 30px);
   }
+  .animate-ping {
+    animation: var(--animate-ping);
+  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -543,6 +548,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#8BC34A\] {
+    background-color: #8BC34A;
+  }
   .bg-\[\#24232A\] {
     background-color: #24232A;
   }
@@ -612,8 +620,20 @@
   .p-\[0px_30px_0px_15px\] {
     padding: 0px 30px 0px 15px;
   }
+  .p-\[2px\] {
+    padding: 2px;
+  }
+  .p-\[5px\] {
+    padding: 5px;
+  }
+  .p-\[5px_5px\] {
+    padding: 5px 5px;
+  }
   .p-\[10px\] {
     padding: 10px;
+  }
+  .p-\[10px_5px\] {
+    padding: 10px 5px;
   }
   .p-\[10px_10px\] {
     padding: 10px 10px;
@@ -664,6 +684,10 @@
   .leading-\[30px\] {
     --tw-leading: 30px;
     line-height: 30px;
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-\[\#7AB022\] {
     color: #7AB022;
@@ -740,10 +764,20 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -755,6 +789,7 @@
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-leading: initial;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
