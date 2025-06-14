@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
     
     
     if (atual > maxScroll) {
-        c2.style.strokeDashoffset = offset + 6
+        c2.style.strokeDashoffset = offset 
     } else {
         c2.style.strokeDashoffset = offset
     }

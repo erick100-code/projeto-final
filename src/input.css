@@ -20,7 +20,7 @@
 }
 
 .quatro {
-    animation: quatro 2s infinite;
+    animation: quatro 1.5s infinite;
 }
 
 @keyframes quatro {
@@ -31,4 +31,8 @@
     50% {
         transform: scale(1.4);
     }
+}
+
+.activado {
+    @apply h-auto opacity-[1] p-[10px]
 }
