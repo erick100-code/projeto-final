@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-900: oklch(39.6% 0.141 25.723);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-lime-400: oklch(84.1% 0.238 128.85);
     --color-green-400: oklch(79.2% 0.209 151.711);
@@ -230,6 +231,9 @@
   .h-\[20px\] {
     height: 20px;
   }
+  .h-\[30px\] {
+    height: 30px;
+  }
   .h-\[40px\] {
     height: 40px;
   }
@@ -251,11 +255,17 @@
   .h-\[100px\] {
     height: 100px;
   }
+  .h-\[140px\] {
+    height: 140px;
+  }
   .h-\[150px\] {
     height: 150px;
   }
   .h-\[200px\] {
     height: 200px;
+  }
+  .h-\[300px\] {
+    height: 300px;
   }
   .h-\[350px\] {
     height: 350px;
@@ -317,6 +327,15 @@
   .w-\[40px\] {
     width: 40px;
   }
+  .w-\[50pc\] {
+    width: 50pc;
+  }
+  .w-\[50pd\] {
+    width: 50pd;
+  }
+  .w-\[50px\] {
+    width: 50px;
+  }
   .w-\[70px\] {
     width: 70px;
   }
@@ -362,6 +381,9 @@
   .w-\[290px\] {
     width: 290px;
   }
+  .w-\[300px\] {
+    width: 300px;
+  }
   .w-\[450px\] {
     width: 450px;
   }
@@ -379,6 +401,21 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .transform-\[scale\(\)\] {
+    transform: scale();
+  }
+  .transform-\[scale\(1\)\] {
+    transform: scale(1);
+  }
+  .transform-\[scale\(1\.2\)\] {
+    transform: scale(1.2);
+  }
+  .transform-\[scale\(2\)\] {
+    transform: scale(2);
+  }
+  .transform-\[scale\] {
+    transform: scale;
   }
   .transform-\[translate\(\)\] {
     transform: translate();
@@ -434,11 +471,23 @@
   .items-center {
     align-items: center;
   }
+  .justify-between {
+    justify-content: space-between;
+  }
   .justify-center {
     justify-content: center;
   }
   .gap-\[0px_10px\] {
     gap: 0px 10px;
+  }
+  .gap-\[0px_20px\] {
+    gap: 0px 20px;
+  }
+  .gap-\[0px_30px\] {
+    gap: 0px 30px;
+  }
+  .gap-\[0px_\] {
+    gap: 0px ;
   }
   .gap-\[5px_0px\] {
     gap: 5px 0px;
@@ -449,11 +498,22 @@
   .gap-\[10px_0px\] {
     gap: 10px 0px;
   }
+  .gap-\[13px_0px\] {
+    gap: 13px 0px;
+  }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
   .gap-\[20px_0px\] {
     gap: 20px 0px;
   }
   .gap-\[30px_0px\] {
     gap: 30px 0px;
+  }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .overflow-auto {
     overflow: auto;
@@ -463,6 +523,9 @@
   }
   .rounded {
     border-radius: 0.25rem;
+  }
+  .rounded-\[5px\] {
+    border-radius: 5px;
   }
   .rounded-\[10px\] {
     border-radius: 10px;
@@ -480,8 +543,14 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#24232A\] {
+    background-color: #24232A;
+  }
   .bg-\[\#131219\] {
     background-color: #131219;
+  }
+  .bg-\[\[\#24232A\]\] {
+    background-color: [#24232A];
   }
   .bg-\[b\] {
     background-color: b;
@@ -497,6 +566,9 @@
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
+  }
+  .bg-red-900 {
+    background-color: var(--color-red-900);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -540,6 +612,18 @@
   .p-\[0px_30px_0px_15px\] {
     padding: 0px 30px 0px 15px;
   }
+  .p-\[10px\] {
+    padding: 10px;
+  }
+  .p-\[10px_10px\] {
+    padding: 10px 10px;
+  }
+  .p-\[10px_20px\] {
+    padding: 10px 20px;
+  }
+  .p-\[10px_\] {
+    padding: 10px ;
+  }
   .p-\[20px\] {
     padding: 20px;
   }
@@ -555,8 +639,20 @@
   .text-\[1\.8rem\] {
     font-size: 1.8rem;
   }
+  .text-\[2em\] {
+    font-size: 2em;
+  }
   .text-\[2rem\] {
     font-size: 2rem;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
   }
   .text-\[40px\] {
     font-size: 40px;
@@ -569,11 +665,17 @@
     --tw-leading: 30px;
     line-height: 30px;
   }
+  .text-\[\#7AB022\] {
+    color: #7AB022;
+  }
   .text-\[2\] {
     color: 2;
   }
   .text-\[49ox\] {
     color: 49ox;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-gray-300 {
     color: var(--color-gray-300);
@@ -592,6 +694,9 @@
   }
   .capitalize {
     text-transform: capitalize;
+  }
+  .normal-case {
+    text-transform: none;
   }
   .underline {
     text-decoration-line: underline;
