@@ -5,3 +5,30 @@
 @theme {
     --font-project: "Poppins", sans-serif;
 }
+
+.zero {
+    @apply animate-bounce
+}
+.um {
+    @apply animate-ping
+}
+.dois {
+    @apply animate-pulse
+}
+.tres {
+    @apply animate-spin
+}
+
+.quatro {
+    animation: quatro 2s infinite;
+}
+
+@keyframes quatro {
+    from, to {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+}

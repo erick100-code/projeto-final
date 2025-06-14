@@ -15,7 +15,7 @@
    
     <!-- aqui fica o botão com barra de progresso -->
 
-    <div class="fixed right-[50px] bottom-[50px] w-[92px] h-[92px]">
+    <div class="fixed z-20 right-[50px] bottom-[50px] w-[92px] h-[92px]">
         <svg>
             <circle r="40" cx="40" cy="40" class="fill-none stroke-[10px] stroke-gray-500 transform-[translate(6px,_6px)]"></circle>
             <circle id="c2" r="40" cx="40" cy="40" class="fill-none stroke-[10px] stroke-[#00ff00] transform-[translate(6px,_6px)]"></circle>
@@ -173,9 +173,21 @@
 
     </section>
 
+    <!-- animation -->
+
+    <section class="bg-black min-h-screen w-screen flex justify-center items-center relative z-0">
+        <button id="botrani" class="cursor-pointer rounded-[10px] border-2 border-[gold] text-white w-[200px] text-[2rem] capitalize h-[200px] select-none">
+            animation
+        </button>
+        
+        <div id="botanimation" class="bg-gray-400 rounded-[10px] text-white text-[1.3rem] font-semibold absolute left-[50%] w-fit top-[50%] p-[5px] transform-[translate(-50%,_170px)] hover:bg-transparent hover:border-[1px] border-[gold] hover:font-normal transition-all duration-[.5s] ease-in-out cursor-pointer select-none">trocar animação</div>
+      
+    </section>
+
     <script src="javascript/pesquisa.js"></script>
     <script src="javascript/scroll.js"></script>
     <script src="javascript/gerarsenha.js"></script>
+    <script src="javascript/animation.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
