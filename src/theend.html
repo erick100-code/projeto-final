@@ -424,87 +424,125 @@
 
     <!-- menu lateral -->
 
-    <section class="bg-[#9F9FFF] w-screen min-h-screen">
+    <section class="bg-[#9F9FFF] w-screen min-h-screen flex">
 
-        <nav>
+        <nav id="menunav" class="bg-white h-screen flex flex-col justify-between group/navmenu">
 
-            <div>
-
-                <div id="perfil">
-                    <img src="images/whiskey.jpg" alt="foto de perfil de um homem bebendo whiskey" class="w-[10px] h-[10px]">
-                    <div>
-                        <span>nome</span>
-                        <span>descrição</span>
+            <div class="p-[10px] flex flex-col gap-[25px_0px] relative">
+                               
+                <div id="perfil" class="flex items-center justify-center gap-[0px_0px] group-[.aberto]/navmenu:gap-[0px_10px]">
+                    <img src="images/whiskey.jpg" alt="foto de perfil de um homem bebendo whiskey" class="rounded-[100%] object-cover w-[50px] h-[50px]">
+                    <div class="flex flex-col">
+                        <span class="w-0 h-0 overflow-hidden transition-all duration-[800ms] group-[.aberto]/navmenu:w-[200px] group-[.aberto]/navmenu:h-auto">nome</span>
+                        <span class="text-[12px] h-0 w-0 overflow-hidden transition-all duration-[800ms] group-[.aberto]/navmenu:w-[200px] group-[.aberto]/navmenu:h-auto">descrição</span>
                     </div>
                 </div>
 
-                <ul>
+                <ul class="flex flex-col gap-[10px_0px]">
                     
-                    <li>
-                        <a href="#">
+                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list">
+                        <a href="#" class="flex items-center justify-center gap-[0px_0px] p-[5px] group-[.aberto]/navmenu:justify-start group-[.aberto]/navmenu:gap-[20px]">
                             <i class="fa-solid fa-chart-simple"></i>
 
-                            <span>dashboard</span>
+                            <span class="w-0 h-0 overflow-hidden transition-all duration-[800ms] group-[.aberto]/navmenu:w-[200px] group-[.aberto]/navmenu:h-auto">dashboard</span>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
+                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list">
+                        <a href="#" class="flex items-center justify-center gap-[0px_0px] p-[5px] group-[.aberto]/navmenu:justify-start group-[.aberto]/navmenu:gap-[20px]">
                             <i class="fa-solid fa-user"></i>
 
-                            <span>usuarios</span>
+                            <span class="w-0 h-0 overflow-hidden transition-all duration-[800ms] group-[.aberto]/navmenu:w-[200px] group-[.aberto]/navmenu:h-auto">usuarios</span>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
+                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list">
+                        <a href="#" class="flex items-center justify-center gap-[0px_0px] p-[5px] group-[.aberto]/navmenu:justify-start group-[.aberto]/navmenu:gap-[20px]">
                             <i class="fa-solid fa-bell"></i>
 
-                            <span>notificações</span>
+                            <span class="w-0 h-0 overflow-hidden transition-all duration-[800ms] group-[.aberto]/navmenu:w-[200px] group-[.aberto]/navmenu:h-auto">notificações</span>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
+                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list">
+                        <a href="#" class="flex items-center justify-center gap-[0px_0px] p-[5px] group-[.aberto]/navmenu:justify-start group-[.aberto]/navmenu:gap-[20px]">
                             <i class="fa-solid fa-box"></i>
 
-                            <span>produtos</span>
+                            <span class="w-0 h-0 overflow-hidden transition-all duration-[800ms] group-[.aberto]/navmenu:w-[200px] group-[.aberto]/navmenu:h-auto">produtos</span>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
+                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list ground">
+                        <a href="#" class="flex items-center justify-center gap-[0px_0px] p-[5px] group-[.aberto]/navmenu:justify-start group-[.aberto]/navmenu:gap-[20px]">
                             <i class="fa-solid fa-image"></i>
 
-                            <span>imagens</span>
+                            <span class="w-0 h-0 overflow-hidden transition-all duration-[800ms] group-[.aberto]/navmenu:w-[200px] group-[.aberto]/navmenu:h-auto">imagens</span>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
+                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list">
+                        <a href="#" class="flex items-center justify-center gap-[0px_0px] p-[5px] group-[.aberto]/navmenu:justify-start group-[.aberto]/navmenu:gap-[20px]">
                             <i class="fa-solid fa-gear iconn"></i>
 
-                            <span>configurações</span>
+                            <span class="w-0 h-0 overflow-hidden transition-all duration-[800ms] group-[.aberto]/navmenu:w-[200px] group-[.aberto]/navmenu:h-auto">configurações</span>
                         </a>
                     </li>
                 </ul>
 
-                <button>
+                <button id="abref" class="bg-blue-400 rounded-[100%] shadow-[0px_0px_5px_black] text-white flex items-center justify-center absolute -right-[15px] top-[60px] h-[30px] w-[30px] cursor-pointer transition-all duration-[800ms] group-[.aberto]/navmenu:transform-[rotate(180deg)]">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
 
-            <div>
+            <div class="border-[1px] border-transparent border-t-blue-500 p-[15px] flex justify-center items-center">
         
-                <button>
+                <button class="text-[18px] flex items-center justify-center gap-[0px_0px] cursor-pointer group-[.aberto]/navmenu:justify-start group-[.aberto]/navmenu:text-left group-[.aberto]/navmenu:gap-[0px_10px]">
                     <i class="fa-solid fa-right-from-bracket"></i>
 
-                    <span>logout</span>
+                    <span class="w-0 h-0 overflow-hidden transition-all duration-[800ms] group-[.aberto]/navmenu:w-[200px] group-[.aberto]/navmenu:h-auto">logout</span>
                 </button>
         
             </div>
         
         </nav>
+
+        <main class="bg-[#9F9FFF] min-h-screen w-screen">
+            <nav class="bg-[#464671]">
+                <ul class="text-white flex justify-center">
+                    
+                    <li class="relative group/l1">
+                        <a href="#" class="p-[15px] block hover:bg-gray-400 minis">if home?</a>
+                        <div class="bg-[#464671] text-center flex-col absolute w-full left-0 top-[54px] hidden group-hover/l1:flex">
+                            <a href="#" class="hover:bg-gray-400 p-[10px_0px] minis">inicio</a>
+                            <a href="#" class="hover:bg-gray-400 p-[10px_0px] minis">começo</a>
+                            <a href="#" class="hover:bg-gray-400 p-[10px_0px] minis">premissa</a>
+                        </div>
+                    </li>
+                    
+                    <li class="relative group/l2">
+                        <a href="#" class="p-[15px] block hover:bg-gray-400 minis">devices</a>
+                    
+                        <div class="bg-[#464671] text-center flex-col w-full hidden absolute group-hover/l2:flex">
+                            <a href="#" class="hover:bg-gray-400 p-[10px_0px] minis">phone</a>
+                            <a href="#" class="hover:bg-gray-400 p-[10px_0px] minis">tablets</a>
+                            <a href="#" class="hover:bg-gray-400 p-[10px_0px] minis">notebooks</a>
+                        </div>
+                    </li>
+                    <!-- quando eu clicar em cada link eles vão ficar com bg-gray-500 -->
+                    <li class="relative group/l3">
+                        <a href="#" class="p-[15px] block hover:bg-gray-400 minis">names</a>
+                        
+                        <div class="bg-[#464671] text-center flex-col absolute w-full left-0 top-[54px] hidden group-hover/l3:flex">
+                            <a href="#" class="p-[10px_0px] hover:bg-gray-400 minis">erick</a>
+                            <a href="#" class="p-[10px_0px] hover:bg-gray-400 minis">eduardo</a>
+                            <a href="#" class="p-[10px_0px] hover:bg-gray-400 minis">souza</a>
+                        </div>
+                    </li>
+                
+                </ul>
+            </nav>
+            
+        </main>
 
     </section>
 
@@ -514,6 +552,7 @@
     <script src="javascript/animation.js"></script>
     <script src="javascript/accordion.js"></script>
     <script src="javascript/kanban.js"></script>
+    <script src="javascript/menulateral.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>

@@ -65,3 +65,7 @@ body::-webkit-scrollbar-thumb {
 .fundo {
     @apply bg-gray-300
 }
+
+.ground {
+    @apply bg-blue-400 text-white
+}
