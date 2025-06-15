@@ -21,12 +21,12 @@ window.addEventListener('scroll', () => {
     
     
     if (atual > maxScroll) {
-        c2.style.strokeDashoffset = offset 
+        c2.style.strokeDashoffset = offset  
     } else {
         c2.style.strokeDashoffset = offset
     }
  
-    if (atual > maxScroll) {
+    if (atual >= maxScroll) {
         c2.style.stroke = 'gold'
         
     } else {

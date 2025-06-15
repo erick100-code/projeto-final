@@ -11,7 +11,7 @@
 
 
 </head>
-<body class="font-project min-h-screen">
+<body class="font-project min-h-screen w-[100%] overflow-x-hidden">
    
     <!-- aqui fica o botão com barra de progresso -->
 
@@ -180,7 +180,7 @@
             animation
         </button>
         
-        <div id="botanimation" class="bg-gray-400 rounded-[10px] text-white text-[1.3rem] font-semibold absolute left-[50%] w-fit top-[50%] p-[5px] transform-[translate(-50%,_170px)] hover:bg-transparent hover:border-[1px] border-[gold] hover:font-normal transition-all duration-[.5s] ease-in-out cursor-pointer select-none">trocar animação</div>
+        <div id="botanimation" class="bg-gray-400 rounded-[10px] text-white text-[1.3rem] font-semibold absolute left-[50%] w-fit top-[50%] p-[5px] transform-[translate(-50%,_170px)] hover:bg-transparent hover:border-[1px] border-[gold] hover:font-normal transition-all duration-[.5s] ease-in-out cursor-pointer select-none">animação aleatória</div>
       
     </section>
 
@@ -249,11 +249,185 @@
 
     </section>
 
+    <!-- kanban -->
+
+    <section class="bg-[#A4A5A6] min-h-screen w-screen flex justify-center items-center">
+        <div class="w-[77vw] h-[90vh] flex gap-[0px_30px] overflow-auto">
+            <div class="bg-[#F6F8FC] rounded-[10px] flex flex-col gap-[30px_0px] min-w-[270px] h-full overflow-y-auto overflow-x-hidden p-[10px] relative">
+
+                <div class="bg-purple-500 w-full h-[5px] absolute top-0 left-0">
+
+                </div>
+
+                <div class="w-full flex items-center justify-between mt-[10px]">
+                    <h1 class="text-[1.4rem]">pendente</h1>
+                    <i class="fa-solid fa-plus text-[20px]"></i>
+                </div>
+
+                <div class="rounded-[5px] h-full flex flex-col gap-[10px_0px] inter">
+                    <div class="bg-white rounded-[5px] shadow-[1px_1px_5px_black]  text-[15px] p-[10px] flex flex-col items-start gap-[10px_0px] cards" draggable="true">
+                        <button class="bg-purple-500 rounded-[20px] text-white text-[13px] w-fit p-[3px_3px]">alta prioridade</button>
+                        <span>revisar documento do projeto</span>
+                        <div class="flex items-center justify-between w-full">
+                            <div class="text-[18px] text-gray-400 flex gap-[0px_10px]">
+                                <p>
+                                    <i class="fa-regular fa-comment"></i>
+                                    1
+                                </p>
+
+                                <p>
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    2
+                                </p>
+                            </div>
+                            
+                            <img src="images/whiskey.jpg" alt="foto de perfil, homem bebendo whiskey" class="rounded-[100%] w-[50px] h-[50px] object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F6F8FC] rounded-[10px] flex flex-col gap-[30px_0px] min-w-[270px] h-full overflow-y-auto overflow-x-hidden p-[10px] relative">
+
+                <div class="bg-red-600 w-full h-[5px] absolute top-0 left-0">
+
+                </div>
+
+                <div class="w-full flex items-center justify-between mt-[10px]">
+                    <h1 class="text-[1.4rem]">pendente</h1>
+                    <i class="fa-solid fa-plus text-[20px]"></i>
+                </div>
+
+                <div class="rounded-[5px] h-full flex flex-col gap-[10px_0px] inter">
+                    <div class="bg-white rounded-[5px] shadow-[1px_1px_5px_black]  text-[15px] p-[10px] flex flex-col items-start gap-[10px_0px] cards" draggable="true">
+                        <button class="bg-red-600 rounded-[20px] text-white text-[13px] w-fit p-[3px_3px]">alta prioridade</button>
+                        <span>revisar documento do projeto</span>
+                        <div class="flex items-center justify-between w-full">
+                            <div class="text-[18px] text-gray-400 flex gap-[0px_10px]">
+                                <p>
+                                    <i class="fa-regular fa-comment"></i>
+                                    1
+                                </p>
+
+                                <p>
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    2
+                                </p>
+                            </div>
+                            
+                            <img src="images/whiskey.jpg" alt="foto de perfil, homem bebendo whiskey" class="rounded-[100%] w-[50px] h-[50px] object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F6F8FC] rounded-[10px] flex flex-col gap-[30px_0px] min-w-[270px] h-full overflow-y-auto overflow-x-hidden p-[10px] relative">
+
+                <div class="bg-[gold] w-full h-[5px] absolute top-0 left-0">
+
+                </div>
+
+                <div class="w-full flex items-center justify-between mt-[10px]">
+                    <h1 class="text-[1.4rem]">pendente</h1>
+                    <i class="fa-solid fa-plus text-[20px]"></i>
+                </div>
+
+                <div class="rounded-[5px] h-full flex flex-col gap-[10px_0px] inter">
+                    <div class="bg-white rounded-[5px] shadow-[1px_1px_5px_black]  text-[15px] p-[10px] flex flex-col items-start gap-[10px_0px] cards" draggable="true">
+                        <button class="bg-[gold] rounded-[20px] text-white text-[13px] w-fit p-[3px_3px]">alta prioridade</button>
+                        <span>revisar documento do projeto</span>
+                        <div class="flex items-center justify-between w-full">
+                            <div class="text-[18px] text-gray-400 flex gap-[0px_10px]">
+                                <p>
+                                    <i class="fa-regular fa-comment"></i>
+                                    1
+                                </p>
+
+                                <p>
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    2
+                                </p>
+                            </div>
+                            
+                            <img src="images/whiskey.jpg" alt="foto de perfil, homem bebendo whiskey" class="rounded-[100%] w-[50px] h-[50px] object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F6F8FC] rounded-[10px] flex flex-col gap-[30px_0px] min-w-[270px] h-full overflow-y-auto overflow-x-hidden p-[10px] relative">
+
+                <div class="bg-[#00ff00] w-full h-[5px] absolute top-0 left-0">
+
+                </div>
+
+                <div class="w-full flex items-center justify-between mt-[10px]">
+                    <h1 class="text-[1.4rem]">pendente</h1>
+                    <i class="fa-solid fa-plus text-[20px]"></i>
+                </div>
+
+                <div class="rounded-[5px] h-full flex flex-col gap-[10px_0px] inter">
+                    <div class="bg-white rounded-[5px] shadow-[1px_1px_5px_black]  text-[15px] p-[10px] flex flex-col items-start gap-[10px_0px] cards" draggable="true">
+                        <button class="bg-[#00ff00] rounded-[20px] text-white text-[13px] w-fit p-[3px_3px]">alta prioridade</button>
+                        <span>revisar documento do projeto</span>
+                        <div class="flex items-center justify-between w-full">
+                            <div class="text-[18px] text-gray-400 flex gap-[0px_10px]">
+                                <p>
+                                    <i class="fa-regular fa-comment"></i>
+                                    1
+                                </p>
+
+                                <p>
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    2
+                                </p>
+                            </div>
+                            
+                            <img src="images/whiskey.jpg" alt="foto de perfil, homem bebendo whiskey" class="rounded-[100%] w-[50px] h-[50px] object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-[#F6F8FC] rounded-[10px] flex flex-col gap-[30px_0px] min-w-[270px] h-full overflow-y-auto overflow-x-hidden p-[10px] relative">
+
+                <div class="bg-blue-500 w-full h-[5px] absolute top-0 left-0">
+
+                </div>
+
+                <div class="w-full flex items-center justify-between mt-[10px]">
+                    <h1 class="text-[1.4rem]">pendente</h1>
+                    <i class="fa-solid fa-plus text-[20px]"></i>
+                </div>
+
+                <div class="rounded-[5px] h-full flex flex-col gap-[10px_0px] inter">
+                    <div class="bg-white rounded-[5px] shadow-[1px_1px_5px_black]  text-[15px] p-[10px] flex flex-col items-start gap-[10px_0px] cards" draggable="true">
+                        <button class="bg-blue-500 rounded-[20px] text-white text-[13px] w-fit p-[3px_3px]">alta prioridade</button>
+                        <span>revisar documento do projeto</span>
+                        <div class="flex items-center justify-between w-full">
+                            <div class="text-[18px] text-gray-400 flex gap-[0px_10px]">
+                                <p>
+                                    <i class="fa-regular fa-comment"></i>
+                                    1
+                                </p>
+
+                                <p>
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    2
+                                </p>
+                            </div>
+                            
+                            <img src="images/whiskey.jpg" alt="foto de perfil, homem bebendo whiskey" class="rounded-[100%] w-[50px] h-[50px] object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="javascript/pesquisa.js"></script>
     <script src="javascript/scroll.js"></script>
     <script src="javascript/gerarsenha.js"></script>
     <script src="javascript/animation.js"></script>
     <script src="javascript/accordion.js"></script>
+    <script src="javascript/kanban.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
