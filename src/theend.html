@@ -570,6 +570,30 @@
         </main>
 
     </section>
+    
+    <section class="bg-radial-[circle] from-red-600 to-black min-w-screen min-h-screen flex justify-center items-center font-horror">
+        <div class="bg-[#00000071] p-[10px] flex flex-col">
+            <div class="h-[300px] w-[300px] flex justify-center items-center border-red-600 border-[2px] rounded-[100%]">
+                <h1 id="ttcron" class="text-black text-shadow-[2px_2px_0px_red] text-[2.3rem]">00: 00: 00: 00</h1>
+            </div>
+
+            <div class="flex items-center gap-[0px_15px] w-full m-[20px_0px]">
+                <button id="reiniciar" class="bg-red-700 rounded-[5px] text-center h-[40px] w-full cursor-pointer flex items-center justify-center">
+                    <i  class="fa-solid fa-arrow-rotate-right"></i>
+                </button>
+
+                <button id="play"  data-action="start" class="bg-red-700 rounded-[5px] text-center h-[40px] w-full cursor-pointer flex items-center justify-center">
+                    <i  class="fa-solid fa-play"></i>
+                </button>
+
+                <button id="marcar" class="bg-red-700 rounded-[5px] text-center h-[40px] w-full cursor-pointer flex items-center justify-center">
+                    <i  class="fa-solid fa-flag"></i>
+                </button>
+            </div>
+
+            <div id="marctime" class="text-center"></div>
+        </div>
+    </section>
 
     <script src="javascript/pesquisa.js"></script>
     <script src="javascript/scroll.js"></script>
@@ -578,6 +602,7 @@
     <script src="javascript/accordion.js"></script>
     <script src="javascript/kanban.js"></script>
     <script src="javascript/menulateral.js"></script>
+    <script src="javascript/cronometro.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
