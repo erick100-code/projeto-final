@@ -45,3 +45,14 @@ function mudarcor(mini) {
         mini.style.backgroundColor = ''        
     }, 200);
 }
+
+const botler = document.getElementById('botler')
+botler.addEventListener('click', () => {
+    const container = document.getElementById('containerlermais')
+    container.classList.toggle('lermais')
+    if (container.classList.contains('lermais')) {
+        botler.textContent = 'Ler Menos'
+    } else {
+        botler.textContent = 'Ler Mais'
+    }
+})

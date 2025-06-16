@@ -24,6 +24,6 @@ document.querySelectorAll('.inter').forEach(uni => {
     uni.addEventListener('drop', (event) => {
         event.currentTarget.classList.remove('fundo')
         const card = document.querySelector('.arrastando')
-        event.currentTarget.appendChild(card)
+        event.currentTarget.appendChild(card)  
     })
 })

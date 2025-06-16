@@ -11,7 +11,7 @@
 
 
 </head>
-<body class="font-project min-h-screen w-[100%] overflow-x-hidden">
+<body class="font-project min-h-screen min-w-screen overflow-x-hidden">
    
     <!-- aqui fica o botão com barra de progresso -->
 
@@ -28,7 +28,7 @@
 
     <!-- barra de pesquisa -->
 
-    <section class="bg-blue-500 min-h-screen w-screen flex justify-center items-center">
+    <section class="bg-blue-500 min-h-screen min-w-screen flex justify-center items-center">
         
         <div class="capitalize w-[450px] flex flex-col gap-[20px_0px] max-md:w-[350px]">
 
@@ -124,7 +124,7 @@
 
     <!-- gerador de senha -->
 
-    <section class="bg-[#131219] min-h-screen w-screen flex justify-center items-center">
+    <section class="bg-[#131219] min-h-screen min-w-screen flex justify-center items-center">
        
         <div class=" text-white capitalize flex flex-col gap-[10px_0px] items-center w-[300px]">
             <img src="images/senha.svg" alt="cadeado verde com senha" class="object-cover w-[140px] h-[140px]">
@@ -175,7 +175,7 @@
 
     <!-- animation -->
 
-    <section class="bg-black min-h-screen w-screen flex justify-center items-center relative z-0">
+    <section class="bg-black min-h-screen min-w-screen flex justify-center items-center relative z-0">
         <button id="botrani" class="cursor-pointer rounded-[10px] border-2 border-[gold] text-white w-[200px] text-[2rem] capitalize h-[200px] select-none">
             animation
         </button>
@@ -186,7 +186,7 @@
 
     <!-- accordion -->
 
-    <section class="bg-[#1AD980] min-h-screen w-screen flex justify-center items-center">
+    <section class="bg-[#1AD980] min-h-screen min-w-screen flex justify-center items-center">
 
         <div class="w-[400px] flex flex-col gap-[15px_0px] p-[30px_0px]">
         
@@ -253,6 +253,7 @@
 
     <section class="bg-[#A4A5A6] min-h-screen w-screen flex justify-center items-center">
         <div class="w-[77vw] h-[90vh] flex gap-[0px_30px] overflow-auto">
+         
             <div class="bg-[#F6F8FC] rounded-[10px] flex flex-col items-center gap-[30px_0px] min-w-[270px] h-full overflow-y-auto overflow-x-hidden p-[10px] relative">
 
                 <div class="bg-purple-500 w-full h-[5px] absolute top-0 left-0">
@@ -264,8 +265,8 @@
                     <i class="fa-solid fa-plus text-[20px]"></i>
                 </div>
 
-                <div class="rounded-[5px] h-full flex flex-col gap-[10px_0px] inter">
-                    <div class="bg-white rounded-[5px] shadow-[1px_1px_5px_black]  text-[15px] p-[10px] flex flex-col items-start gap-[10px_0px] cards" draggable="true">
+                <div class="rounded-[5px] h-full w-full flex flex-col gap-[10px_0px] inter">
+                    <div class="bg-white rounded-[5px] shadow-[1px_1px_5px_black] text-[15px] p-[10px] flex flex-col items-start gap-[10px_0px] cards" draggable="true">
                         <button class="bg-purple-500 rounded-[20px] text-white text-[13px] w-fit p-[3px_3px]">alta prioridade</button>
                         <span>revisar documento do projeto</span>
                         <div class="flex items-center justify-between w-full">
@@ -286,7 +287,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-[#F6F8FC] rounded-[10px] flex flex-col gap-[30px_0px] min-w-[270px] h-full overflow-y-auto overflow-x-hidden p-[10px] relative">
+           
+            <div class="bg-[#F6F8FC] rounded-[10px] flex flex-col items-center gap-[30px_0px] min-w-[270px] h-full overflow-y-auto overflow-x-hidden p-[10px] relative">
 
                 <div class="bg-red-600 w-full h-[5px] absolute top-0 left-0">
 
@@ -297,7 +299,7 @@
                     <i class="fa-solid fa-plus text-[20px]"></i>
                 </div>
 
-                <div class="rounded-[5px] h-full flex flex-col gap-[10px_0px] inter">
+                <div class="rounded-[5px] h-full w-full flex flex-col gap-[10px_0px] inter">
                     <div class="bg-white rounded-[5px] shadow-[1px_1px_5px_black]  text-[15px] p-[10px] flex flex-col items-start gap-[10px_0px] cards" draggable="true">
                         <button class="bg-red-600 rounded-[20px] text-white text-[13px] w-fit p-[3px_3px]">alta prioridade</button>
                         <span>revisar documento do projeto</span>
@@ -317,6 +319,7 @@
                             <img src="images/whiskey.jpg" alt="foto de perfil, homem bebendo whiskey" class="rounded-[100%] w-[50px] h-[50px] object-cover">
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="bg-[#F6F8FC] rounded-[10px] flex flex-col gap-[30px_0px] min-w-[270px] h-full overflow-y-auto overflow-x-hidden p-[10px] relative">
@@ -424,11 +427,11 @@
 
     <!-- menu lateral -->
 
-    <section class="bg-[#9F9FFF] w-screen min-h-screen flex">
+    <section class="bg-[#9F9FFF] w-screen min-h-screen min-w-screen flex">
+ 
+        <nav id="menunav" class="bg-white min-h-screen flex flex-col justify-between group/navmenu">
 
-        <nav id="menunav" class="bg-white h-screen flex flex-col justify-between group/navmenu">
-
-            <div class="p-[10px] flex flex-col gap-[25px_0px] relative">
+            <div class="p-[10px] flex flex-col gap-[50px_0px] relative">
                                
                 <div id="perfil" class="flex items-center justify-center gap-[0px_0px] group-[.aberto]/navmenu:gap-[0px_10px]">
                     <img src="images/whiskey.jpg" alt="foto de perfil de um homem bebendo whiskey" class="rounded-[100%] object-cover w-[50px] h-[50px]">
@@ -440,7 +443,7 @@
 
                 <ul class="flex flex-col gap-[10px_0px]">
                     
-                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list">
+                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list ground">
                         <a href="#" class="flex items-center justify-center gap-[0px_0px] p-[5px] group-[.aberto]/navmenu:justify-start group-[.aberto]/navmenu:gap-[20px]">
                             <i class="fa-solid fa-chart-simple"></i>
 
@@ -472,7 +475,7 @@
                         </a>
                     </li>
 
-                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list ground">
+                    <li class="rounded-[5px] p-[10px] hover:bg-gray-200 list">
                         <a href="#" class="flex items-center justify-center gap-[0px_0px] p-[5px] group-[.aberto]/navmenu:justify-start group-[.aberto]/navmenu:gap-[20px]">
                             <i class="fa-solid fa-image"></i>
 
@@ -506,7 +509,7 @@
         
         </nav>
 
-        <main class="bg-[#9F9FFF] min-h-screen w-screen">
+        <main class="bg-[#9F9FFF] min-h-screen min-w-screen">
             <nav class="bg-[#464671]">
                 <ul class="text-white flex justify-center">
                     
@@ -541,7 +544,29 @@
                 
                 </ul>
             </nav>
-            
+
+           <div class="w-full min-h-screen flex justify-center items-center p-[10px]">
+                <div class="bg-white w-[350px] p-[30px] relative group/lermais" id="containerlermais">
+                    <p class="border-transparent border-t-indigo-500 border-l-indigo-500 border-[25px] absolute top-0 left-0"></p>
+                    <p class="border-transparent border-t-indigo-500 border-r-indigo-500 border-[25px] absolute top-0 right-0"></p>
+                    <p class="border-[25px] border-transparent border-b-indigo-500 border-l-indigo-500 absolute left-0 bottom-0"></p>
+                    <p class="border-[25px] border-transparent border-b-indigo-500 border-r-indigo-500 absolute bottom-0 right-0"></p>
+                    <div class="">
+                        <img src="images/menu.svg" alt="meuu undraw" class="w-[100%] object-cover">
+                    </div>
+                    
+                    <div class="p-[10px] h-[290px] group-[.lermais]/lermais:h-auto overflow-hidden relative">
+                        <h1 class="font-semibold text-center text-[1.5rem] m-[0px_0px_15px_0px]">para que servem os menus em sites?</h1>
+
+                        <p class="text-justify relative">
+                            com minhas própias palavras eu digo, além de serem interativos e agradaveis visualmente, eles são uma parte importante de um site, onde ficarão conteudos para troca de tela em relação a um determinado tema ou assunto seja ele qual for. ele serve basicamente e intencionalmente propositalmente para a acessibilidade de um usuario permitindo que ele acesse diferentes conteudos sem ocupar sempre toda a estrutura.
+                        </p>
+                        <div class="bg-linear-to-b from-transparent to-blue-600 to-91% absolute bottom-0 left-0 w-full h-[100px] group-[.lermais]/lermais:hidden"></div>
+
+                    </div>
+                    <button id="botler" class="bg-indigo-600 text-white capitalize text-[18px] w-full p-[5px] m-[20px_0px_10px_0px] cursor-pointer">ler mais</button>
+                </div>
+           </div>
         </main>
 
     </section>
