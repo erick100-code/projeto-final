@@ -75,3 +75,8 @@ body::-webkit-scrollbar-thumb {
 .ground {
     @apply bg-blue-400 text-white
 }
+
+.barra {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
