@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-700: oklch(50.5% 0.213 27.518);
     --color-blue-400: oklch(70.7% 0.165 254.624);
@@ -24,6 +25,7 @@
     --spacing: 0.25rem;
     --font-weight-normal: 400;
     --font-weight-semibold: 600;
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-spin: spin 1s linear infinite;
     --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
@@ -228,6 +230,9 @@
   .z-0 {
     z-index: 0;
   }
+  .z-1 {
+    z-index: 1;
+  }
   .z-10 {
     z-index: 10;
   }
@@ -272,6 +277,9 @@
   }
   .hidden {
     display: none;
+  }
+  .inline {
+    display: inline;
   }
   .table {
     display: table;
@@ -402,29 +410,8 @@
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
-  .transform-\[rotate\(\)\] {
-    transform: rotate();
-  }
-  .transform-\[rotate\(15\)\] {
-    transform: rotate(15);
-  }
-  .transform-\[rotate\(100deg\)\] {
-    transform: rotate(100deg);
-  }
-  .transform-\[rotate\(140deg\)\] {
-    transform: rotate(140deg);
-  }
-  .transform-\[rotate\(150deg\)\] {
-    transform: rotate(150deg);
-  }
-  .transform-\[rotate\(170deg\)\] {
-    transform: rotate(170deg);
-  }
   .transform-\[rotate\(180deg\)\] {
     transform: rotate(180deg);
-  }
-  .transform-\[rotate\] {
-    transform: rotate;
   }
   .transform-\[scale\(1\.2\)\] {
     transform: scale(1.2);
@@ -613,9 +600,6 @@
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
-  }
   .bg-gray-400 {
     background-color: var(--color-gray-400);
   }
@@ -628,14 +612,14 @@
   .bg-purple-500 {
     background-color: var(--color-purple-500);
   }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
   .bg-red-600 {
     background-color: var(--color-red-600);
   }
   .bg-red-700 {
     background-color: var(--color-red-700);
-  }
-  .bg-transparent {
-    background-color: transparent;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -673,42 +657,8 @@
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .from-5\% {
-    --tw-gradient-from-position: 5%;
-  }
-  .from-10\% {
-    --tw-gradient-from-position: 10%;
-  }
-  .from-30\% {
-    --tw-gradient-from-position: 30%;
-  }
-  .from-50\% {
-    --tw-gradient-from-position: 50%;
-  }
-  .from-80\% {
-    --tw-gradient-from-position: 80%;
-  }
-  .from-85\% {
-    --tw-gradient-from-position: 85%;
-  }
-  .to-\[\#000000b2\] {
-    --tw-gradient-to: #000000b2;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
   .to-\[\#000000c9\] {
     --tw-gradient-to: #000000c9;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-\[\#000000e0\] {
-    --tw-gradient-to: #000000e0;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-\[\#0000005b\] {
-    --tw-gradient-to: #0000005b;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-\[black\] {
-    --tw-gradient-to: black;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-black {
@@ -719,41 +669,8 @@
     --tw-gradient-to: var(--color-blue-600);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .to-0\% {
-    --tw-gradient-to-position: 0%;
-  }
-  .to-3\% {
-    --tw-gradient-to-position: 3%;
-  }
-  .to-7\% {
-    --tw-gradient-to-position: 7%;
-  }
-  .to-15\% {
-    --tw-gradient-to-position: 15%;
-  }
-  .to-30\% {
-    --tw-gradient-to-position: 30%;
-  }
-  .to-50\% {
-    --tw-gradient-to-position: 50%;
-  }
-  .to-60\% {
-    --tw-gradient-to-position: 60%;
-  }
-  .to-65\% {
-    --tw-gradient-to-position: 65%;
-  }
-  .to-70\% {
-    --tw-gradient-to-position: 70%;
-  }
-  .to-80\% {
-    --tw-gradient-to-position: 80%;
-  }
   .to-85\% {
     --tw-gradient-to-position: 85%;
-  }
-  .to-90\% {
-    --tw-gradient-to-position: 90%;
   }
   .to-91\% {
     --tw-gradient-to-position: 91%;
@@ -805,6 +722,9 @@
   }
   .p-\[30px_0px\] {
     padding: 30px 0px;
+  }
+  .p-\[40px\] {
+    padding: 40px;
   }
   .text-center {
     text-align: center;
@@ -892,6 +812,12 @@
   .opacity-0 {
     opacity: 0%;
   }
+  .opacity-\[\.3\] {
+    opacity: .3;
+  }
+  .opacity-\[\.4\] {
+    opacity: .4;
+  }
   .opacity-\[\.5\] {
     opacity: .5;
   }
@@ -906,11 +832,6 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-\[opacity\] {
     transition-property: opacity;
@@ -934,9 +855,9 @@
     --tw-duration: 700ms;
     transition-duration: 700ms;
   }
-  .duration-70000 {
-    --tw-duration: 70000ms;
-    transition-duration: 70000ms;
+  .duration-1000 {
+    --tw-duration: 1000ms;
+    transition-duration: 1000ms;
   }
   .duration-\[\.5s\] {
     --tw-duration: .5s;
@@ -945,6 +866,10 @@
   .duration-\[800ms\] {
     --tw-duration: 800ms;
     transition-duration: 800ms;
+  }
+  .ease-in {
+    --tw-ease: var(--ease-in);
+    transition-timing-function: var(--ease-in);
   }
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
@@ -1143,6 +1068,9 @@ html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
 .barra {
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+.acendida {
+  opacity: 1;
 }
 @property --tw-rotate-x {
   syntax: "*";

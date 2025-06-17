@@ -80,3 +80,7 @@ body::-webkit-scrollbar-thumb {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
+.acendida {
+    @apply opacity-[1]
+}
