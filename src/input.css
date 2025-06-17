@@ -44,8 +44,7 @@
 }
 
 html{
-
-    @apply bg-black
+    @apply bg-black min-w-screen  min-h-screen
 }
 
 html::-webkit-scrollbar,
@@ -83,4 +82,13 @@ body::-webkit-scrollbar-thumb {
 
 .acendida {
     @apply opacity-[1]
+}
+
+.modalb {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fundomodal {
+    @apply from-red-600 to-black bg-linear-to-r
 }
