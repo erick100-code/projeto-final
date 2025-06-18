@@ -571,7 +571,7 @@
 
     </section>
     
-    <!-- carrosel/coursel -->
+    <!-- cronometro -->
 
     <section class="bg-radial-[circle] from-red-600 to-black min-w-screen min-h-screen flex justify-center items-center font-horror">
         <div class="bg-[#00000071] p-[10px] flex flex-col">
@@ -596,6 +596,8 @@
             <div id="marctime" class="text-center"></div>
         </div>
     </section>
+
+    <!-- carrosel/coursel -->
 
     <section class="min-h-screen min-w-screen flex justify-center items-center">
         <div class="w-[500px] relative">
@@ -666,27 +668,27 @@
     <!-- menu hamburguinho -->
 
     <section class="bg-white min-h-screen min-w-screen">
-        <header class="bg-[#0000ffd0] capitalize p-[3rem] flex flex-col gap-[0px_0px]">
+        <header id="headermenu" class="bg-[#0000ffd0] capitalize p-[3rem] flex flex-col gap-[0px_0px] group/menuham">
             <nav class="flex justify-between items-center text-white">
-                <h1 class="text-[2rem]">logo</h1>
+                <h1 class="text-[2rem] font-semibold">logo</h1>
             
-                <div class="flex items-center justify-between w-[300px] text-[1.2rem]">
+                <div class="flex items-center justify-between w-[300px] text-[1.3rem] max-[1000px]:hidden">
                     <a href="#" class="hover:underline decoration-cyan-400 decoration-2">local</a>
                     <a href="#" class="hover:underline decoration-cyan-400 decoration-2">home</a>
                     <a href="#" class="hover:underline decoration-cyan-400 decoration-2">services</a>
                 </div>
                 
-                <button class="bg-[gold] rounded-[5px] text-[1.2rem] p-[10px] flex items-center justify-center cursor-pointer">
+                <button class="bg-[gold] rounded-[5px] text-[1.2rem] p-[10px] flex items-center justify-center cursor-pointer max-[1000px]:hidden">
                     entrar
                 </button>
 
-                <div class="hidden">
+                <div id="menuM" class="hidden  text-[50px] max-[1000px]:flex justify-center items-center cursor-pointer">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
             
-            <div class="text-white w-full flex flex-col gap-[20px_0px] justify-center items-center h-[0px] overflow-hidden">
-                <ul class="flex flex-col gap-[10px_0px] text-center text-[1.2rem]">
+            <div class="text-white w-full flex flex-col gap-[30px_0px] justify-center items-center h-[0px] overflow-hidden group-[.aberto]/menuham:h-auto">
+                <ul class="flex flex-col gap-[20px_0px] text-center text-[1.2rem]">
                     <a href="#" class="hover:underline decoration-2 decoration-cyan-400">inicio</a>
                     <a href="#" class="hover:underline decoration-2 decoration-cyan-400">projeto</a>
                     <a href="#" class="hover:underline decoration-2 decoration-cyan-400">sobre</a>
@@ -718,6 +720,7 @@
     <script src="javascript/cronometro.js"></script>
     <script src="javascript/courser.js"></script>
     <script src="javascript/modal.js"></script>
+    <script src="javascript/menuhamburger.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>

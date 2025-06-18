@@ -92,3 +92,7 @@ body::-webkit-scrollbar-thumb {
 .fundomodal {
     @apply from-red-600 to-black bg-linear-to-r
 }
+
+.aberto {
+    @apply gap-[40px_0px]
+}
