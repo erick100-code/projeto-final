@@ -259,8 +259,14 @@
       max-width: 96rem;
     }
   }
+  .m-\[0px\] {
+    margin: 0px;
+  }
   .m-\[0px_0px_15px_0px\] {
     margin: 0px 0px 15px 0px;
+  }
+  .m-\[0px_10px\] {
+    margin: 0px 10px;
   }
   .m-\[20px_0px\] {
     margin: 20px 0px;
@@ -736,6 +742,9 @@
   .p-\[0px_30px_0px_15px\] {
     padding: 0px 30px 0px 15px;
   }
+  .p-\[1\] {
+    padding: 1;
+  }
   .p-\[3px_3px\] {
     padding: 3px 3px;
   }
@@ -747,6 +756,9 @@
   }
   .p-\[5px_0px\] {
     padding: 5px 0px;
+  }
+  .p-\[10\] {
+    padding: 10;
   }
   .p-\[10px\] {
     padding: 10px;
@@ -1173,6 +1185,31 @@
   .max-\[1000px\]\:hidden {
     @media (width < 1000px) {
       display: none;
+    }
+  }
+  .max-\[1000px\]\:transform {
+    @media (width < 1000px) {
+      transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+    }
+  }
+  .max-\[1000px\]\:transform-\[sca\] {
+    @media (width < 1000px) {
+      transform: sca;
+    }
+  }
+  .max-\[1000px\]\:transform-\[scale\(\)\] {
+    @media (width < 1000px) {
+      transform: scale();
+    }
+  }
+  .max-\[1000px\]\:transform-\[scale\(3\.5\)\] {
+    @media (width < 1000px) {
+      transform: scale(3.5);
+    }
+  }
+  .max-\[1000px\]\:transform-\[scale\] {
+    @media (width < 1000px) {
+      transform: scale;
     }
   }
   .max-\[800px\]\:flex {

@@ -79,16 +79,27 @@ document.getElementById('btn').addEventListener('click', () => {
     
     caixaSenha.style.display = 'flex'
     
-    const textlocale = caixaSenha.querySelector('span')
+    let textlocale = caixaSenha.querySelector('.spangerar')
     
     textlocale.textContent = gerarSenha(quant, vetor)
-
+    
     const copyico = document.getElementById('copyico')
     
     copyico.style.cursor = 'pointer'
     
     copyico.addEventListener('click', () => {
         navigator.clipboard.writeText(textlocale.textContent)
+        copyico.classList.add('animate-ping')
+        copyico.style.pointerEvents = 'none'
+        setTimeout(() => {
+            copyico.classList.remove('animate-ping')
+            copyico.style.pointerEvents = 'auto'
+        }, 1000);
+    })
+    
+    copyico.addEventListener('touchstart', () => {
+        navigator.clipboard.writeText(textlocale.textContent)
+        window.alert('ate aqui funciona')
         copyico.classList.add('animate-ping')
         copyico.style.pointerEvents = 'none'
         setTimeout(() => {
