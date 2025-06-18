@@ -2,6 +2,9 @@ const car = document.querySelectorAll('.carbot')
 const images = document.querySelectorAll('.coursel-images')
 let atualmage = 0
 const maximage = images.length
+const sec = document.getElementById('courselsec')
+
+let teste
 
 car.forEach(car => {
     car.addEventListener('click', () => {
@@ -22,11 +25,15 @@ car.forEach(car => {
         }
         
         images.forEach(image => image.classList.remove('acendida'))
-
+        
+        
         images[atualmage].scrollIntoView({
             inline: "center",
             behavior: "smooth"
         })
+        
+   
+         
 
         images[atualmage].classList.add('acendida')
     })
